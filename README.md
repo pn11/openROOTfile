@@ -21,8 +21,13 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ROOTLIB
 `make startTBrowser` で `make` する。
 
 ###openROOTfile.workflowをappにする
-`openROOTfile.workflow` をダブルクリックするとAutomatorが `startTBrowser` の場所を指定する必要がある。パス通してもいいかも。初期状態では `~/git/openROOTfile` にあるとしている。
+`openROOTfile.workflow` をダブルクリックするとAutomatorが起動するので、`File`メニューから`Convert to`を選んで`Application`を選ぶ。`startTBrowser` の場所を指定する必要がある(`cd ~/git/openROOTfile`という行を編集する)。パス通してもいいかも。初期状態では `~/git/openROOTfile` にあるとしている。編集したら`.app`として保存する。
 
 ###ROOTファイルを開く
 ROOTファイルを開くプログラムを `openROOTfile.app` に指定してからダブルクリックすると見れるようになる。起動に時間かかるし、ちゃんと終了できないけど、なんとか使える。複数選択して開くこともできる。
 
+###終了
+ウィンドウを閉じてもプロセスが終了しないので、メニューバーでくるくる回ってる歯車をクリックして終了する。
+
+###挙動
+- 2つ以上は同時に走らない。
