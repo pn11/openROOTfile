@@ -26,8 +26,12 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ROOTLIB
 ###ROOTファイルを開く
 ROOTファイルを開くプログラムを `openROOTfile.app` に指定してからダブルクリックすると見れるようになる。起動に時間かかるし、ちゃんと終了できないけど、なんとか使える。複数選択して開くこともできる。
 
+![こんな感じで開かれる](https://raw.githubusercontent.com/pn11/openROOTfile/master/fig/fig1.png)
+
 ###終了
-ウィンドウを閉じてもプロセスが終了しないので、メニューバーでくるくる回ってる歯車をクリックして終了する。
+ウィンドウを閉じてもプロセスが終了しないので、メニューバーでくるくる回ってる歯車をクリックして、×をクリックして終了する(下図参照)。
+
+![こんな感じで開かれる](https://raw.githubusercontent.com/pn11/openROOTfile/master/fig/fig2.png)
 
 ###挙動
 - 2つ以上は同時に走らない。
